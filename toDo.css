@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Shantell Sans", cursive;
+}
+
+.removeBackgroundImage {
+    background-image: url("");
+}
+
+.addBackgroundImage {
+    background-image: url("https://img.freepik.com/free-vector/businessman-holding-pencil-big-complete-checklist-with-tick-marks_1150-35019.jpg?w=996&t=st=1692198973~exp=1692199573~hmac=1a05bba0e867b1a4f7b97584e17bc9a6b88dcb5c467b6ab63fa170e9e3523c27");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center 200px;
+}
+
+body {
+    background-image: url("https://img.freepik.com/free-vector/businessman-holding-pencil-big-complete-checklist-with-tick-marks_1150-35019.jpg?w=996&t=st=1692198973~exp=1692199573~hmac=1a05bba0e867b1a4f7b97584e17bc9a6b88dcb5c467b6ab63fa170e9e3523c27");
+    background-size: calc(80% - 20%);
+    background-repeat: no-repeat;
+    background-position: center 200px;
+}
+
+:root{
+    --background--color:rgb(176, 156, 230);
+    --secondary--color:rgb(84, 27, 243);
+}
+
+#container {
+    max-width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+#header {
+    border-radius: 10px;
+    margin: 1rem auto;
+    height: 20vh;
+    max-width: 700px;
+    width: 75%;
+    padding: 1em;
+    background-color: var(--background--color);
+    font-size: 1rem;
+
+    & h1 {
+        color: white;
+        text-shadow: 2px 2px var blue;
+    }
+
+    & input[type="text"] {
+        border-radius: 5px;
+        outline: none;
+        height: 3rem;
+        width: 100%;
+        padding-left: 5px;
+        box-shadow: 2px 2px 2px var(--secondary--color);
+    }
+
+    & #addTaskButton {
+        position: relative;
+        left: 90%;
+        height: 2rem;
+        top: 1em;
+        box-shadow: 2px 2px var(--secondary--color);
+    }
+
+    & #dateInput,
+    #timeInput {
+        color: var(--secondary--color);
+        position: relative;
+        left: 0;
+        bottom: 0.5rem;
+        box-shadow: 2px 2px var(--secondary--color);
+    }
+}
+
+#noteContainer {
+    margin: auto;
+    max-width: 900px;
+    width: 100%;
+
+    & .dates {
+        cursor: pointer;
+    }
+
+    & #addTaskImage {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    & #chevronIcon {
+        font-size: x-large;
+        font-weight: 500;
+        padding: 4px;
+        cursor: pointer;
+    }
+
+    & .parentDiv {
+        border: 1px solid var(--background--color);
+        border-radius: 5px 5px 5px 5px;
+        margin: 5px;
+        padding: 5px;
+        width: 90%;
+        margin: 5px auto;
+        position: relative;
+    }
+
+    & b {
+        display: block;
+    }
+
+    & .time {
+        color: var(--background--color);
+        position: sticky;
+        left: 60%;
+        font-size: 1rem;
+    }
+
+    & .chevronUp {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    & i {
+        display: inline;
+        font-size: 1.4em;
+        cursor: pointer;
+        margin: 2%;
+        color: var(--background--color);
+        text-shadow: 0px 0px;
+    }
+
+    & .editBtn {
+        position: sticky;
+        left: 65%;
+    }
+
+    & .clearBtn {
+        position: sticky;
+        left: 70%;
+    }
+
+    & #addIcon {
+        color: rgb(26, 14, 14);
+        font-size: 1rem;
+        background-color: var(--background--color);
+        cursor: pointer;
+        border-radius: inherit;
+    }
+
+    & #accordionIcon {
+        position: relative;
+        top: 0;
+    }
+}
+
